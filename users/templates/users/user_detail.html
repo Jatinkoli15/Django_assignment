@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User details</h1>
+    {% if user %}
+
+        <h1>UserID : {{user.id}}</h1>
+        <h1>UserName : {{user.name}}</h1>
+        <h1>UserAge : {{user.age}}</h1>
+        <h1>UserCity : {{user.city}}</h1>
+        
+
+    {% else %}
+     
+        <h1>No users found</h1>
+
+    {%endif%}
+</body>
+</html>
