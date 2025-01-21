@@ -34,8 +34,9 @@ def all_users(request):
 
 def user_detail(request, user_id):
     user_D= {}
+    print(type(user_id))
     for user in dummy_data:
-        if (user['id'] == user_id):
+        if (user['id'] == int(user_id)):
             user_D = user
             break
     return render(request,'users/user_detail.html',{'user' : user_D})
